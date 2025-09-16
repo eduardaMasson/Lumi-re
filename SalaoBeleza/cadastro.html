@@ -29,7 +29,7 @@
             <form>
                 <div class="form-left">
                     <label for="categoria">CATEGORIA</label>
-                    <select id="categoria" class="selecionar">
+                    <select id="categoria" class="selecionar" required>
                         <option>Selecione seu tipo ></option>
                         <option>Cabelereiro(a)</option>
                         <option>Manicure e pedicure</option>
@@ -38,19 +38,19 @@
                     </select>
 
                     <label for="nome">NOME</label>
-                    <input type="text" id="nome" placeholder="">
+                    <input type="text" id="nome" placeholder="" required>
 
                     <label for="email">E-MAIL</label>
-                    <input type="email" id="email" placeholder="">
+                    <input type="email" id="email" placeholder="" required>
                 </div>
 
                 <div class="form-right">
                     <label for="telefone">TELEFONE</label>
-                    <input type="tel" id="telefone" placeholder="">
+                    <input type="tel" id="telefone" placeholder="" required>
 
                     <label for="senha">SENHA</label>
                     <div class="senha-container">
-                        <input type="password" id="senha">
+                        <input type="password" id="senha" required>
                         <img src="assets/img/olhosenha_branco.png" alt="Mostrar senha" class="toggle-senha" onclick="toggleSenha()">
                     </div>
                     <small>
