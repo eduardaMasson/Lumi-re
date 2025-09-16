@@ -38,52 +38,67 @@ nav a {
 /* Conteúdo central */
 
 .cadastro-container {
-    max-width: 900px;
     margin: 50px auto;
     padding: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .cadastro-container div h1 {
     font-family: 'Playfair Display', serif;
     font-style: italic;
-    font-size: 40px;
+    font-size: 45px;
     margin: 0;
 }
 
 .decorative-line {
     text-align: center;
     justify-content: center;
-    padding-right: 520px;
+    padding-right: 700px;
+    padding-bottom: 40px;
 }
 
 .subtitulo {
     margin: 10px 0 40px;
-    font-size: 20px;
+    font-size: 23px;
     font-family: 'Playfair Display', serif;
     font-style: italic;
-    font-weight: lighter;
 }
 
 /* Formulário */
 form {
     display: flex;
-    gap: 40px;
+    gap: 150px;
     width: 100%;
+    justify-content: center;
+}
+
+.selecionar{
+    background: white;
+    color: #5b3b3a;
+    border: 1px solid #5b3b3a;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+select option{
+    background: #5b3b3a;
+    color: white;
 }
 
 form label {
-    font-size: 12px;
-    letter-spacing: 1px;
+    font-size: 15px;
     margin-top: 20px;
+    margin-bottom: 6px;
     display: block;
 }
 
 form input,
 form select {
-    width: 100%;
+    width: 90%;
     padding: 10px;
     border: 1px solid #fff;
     border-radius: 6px;
@@ -97,11 +112,13 @@ form select option {
 }
 
 small {
+    width: 60%;
     display: block;
     margin-top: 10px;
-    font-size: 12px;
+    font-size: 13px;
     color: #ddd;
 }
+
 
 /* Rodapé do formulário */
 .form-footer {
@@ -120,14 +137,38 @@ button {
     background-color: transparent;
     border: 1px solid #fff;
     border-radius: 6px;
-    padding: 10px 20px;
+    padding: 10px 10px;
     color: #fff;
     cursor: pointer;
-    font-weight: bold;
     transition: 0.3s;
+    margin-right: 50px;
 }
 
 button:hover {
     background-color: #fff;
     color: #5b3b3a;
 }
+
+
+/* Campo senha com olho */
+.senha-container {
+    position: relative;
+    width: 90%;
+ 
+}
+
+.senha-container input {
+    width: 100%;
+}
+
+.toggle-senha {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+

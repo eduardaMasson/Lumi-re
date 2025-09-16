@@ -14,9 +14,9 @@
     <header>
         <img src="assets/img/logo.png" alt="LUMIÉRE - Beleza | Estética | Bem-estar" class="logo">
         <nav>
-            <a href="#">LOGIN</a>
-            <a href="#">CADASTRO</a>
-            <a href="#">RELATÓRIO</a>
+            <a href="login.html">LOGIN</a>
+            <a href="cadastro.html">CADASTRO</a>
+            <a href="painel_administrativo.html">RELATÓRIO</a>
         </nav>
     </header>
 
@@ -29,7 +29,7 @@
             <form>
                 <div class="form-left">
                     <label for="categoria">CATEGORIA</label>
-                    <select id="categoria">
+                    <select id="categoria" class="selecionar">
                         <option>Selecione seu tipo ></option>
                         <option>Cabelereiro(a)</option>
                         <option>Manicure e pedicure</option>
@@ -49,18 +49,34 @@
                     <input type="tel" id="telefone" placeholder="">
 
                     <label for="senha">SENHA</label>
-                    <input type="password" id="senha" placeholder="">
+                    <div class="senha-container">
+                        <input type="password" id="senha">
+                        <img src="assets/img/olhosenha_branco.png" alt="Mostrar senha" class="toggle-senha" onclick="toggleSenha()">
+                    </div>
                     <small>
                         *A sua senha precisa ter pelo menos 8 caracteres, uma letra maiúscula, uma letra minúscula, um número e um caractere especial.
                     </small>
 
                     <div class="form-footer">
-                        <span>Já possui uma conta? <a href="login.html">Login</a></span>
+                        <span>Já possui uma conta? <a href="login.html" style="font-weight: bold;">Login</a></span>
                         <button type="submit">CADASTRAR</button>
                     </div>
                 </div>
             </form>
         </section>
     </main>
+        <script>
+    function toggleSenha() {
+        const senhaInput = document.getElementById("senha");
+        const olho = document.querySelector(".toggle-senha");
+
+        if (senhaInput.type === "password") {
+            senhaInput.type = "text"; // mostra a senha
+        } else {
+            senhaInput.type = "password"; // volta para bolinhal
+        }
+    }
+    </script>
+
 </body>
 </html>
